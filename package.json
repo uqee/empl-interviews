@@ -14,9 +14,10 @@
     "ts-node-dev": "1.0.0-pre.43",
     "typescript": "3.6.3"
   },
+  "license": "MIT",
   "name": "empl-interviews",
   "scripts": {
-    "play": "tsnd --notify=false --respawn --transpile-only",
+    "play": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn --",
     "start": "yarn play src/playground.ts",
     "test": "jest"
   },
