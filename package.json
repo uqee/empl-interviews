@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.8",
+    "eslint": "6.5.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-simple-import-sort": "4.0.0",
+    "eslint-plugin-sort-class-members": "1.6.0",
+    "jest": "24.9.0",
+    "node-dev": "4.0.0",
+    "prettier": "1.18.2",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.4.1",
+    "ts-node-dev": "1.0.0-pre.43",
+    "typescript": "3.6.3"
+  },
+  "name": "empl-interviews",
+  "scripts": {
+    "play": "tsnd --notify=false --respawn --transpile-only",
+    "start": "yarn play src/playground.ts",
+    "test": "jest"
+  },
+  "version": "0.1.0"
+}

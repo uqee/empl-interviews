@@ -1,0 +1,7 @@
+Реализовать функцию validBraces, которая будет проверять корректность открытия/закрытия скобок в строке inputStr и возвращать true если строка корректна, в ином функция должна возвращать false. Строка inputStr состоит только из скобок {}, [] и ().
+
+validBraces('()') -> true
+validBraces('[)') -> false
+validBraces('{}[]()') -> true
+validBraces('([{}])') -> true
+validBraces('())({}}{()][][') -> false
