@@ -4,7 +4,7 @@ export enum GameStrategy {
 }
 
 const defaultNumberOfBoxes: number = 3
-const defaultNumberOfPlays: number = 1e4
+const defaultNumberOfPlays: number = 1e5
 
 const getRandomBox = (numberOfBoxes: number): number => {
   return Math.floor(Math.random() * numberOfBoxes)
