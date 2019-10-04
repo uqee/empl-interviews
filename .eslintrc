@@ -40,13 +40,6 @@
     "@typescript-eslint/no-extraneous-class": "warn",
     "@typescript-eslint/no-floating-promises": "warn",
     "@typescript-eslint/no-inferrable-types": "off",
-    "@typescript-eslint/no-magic-numbers": [
-      "error",
-      {
-        "ignoreEnums": true,
-        "ignoreReadonlyClassProperties": true
-      }
-    ],
     "@typescript-eslint/no-parameter-properties": "warn",
     "@typescript-eslint/no-require-imports": "warn",
     "@typescript-eslint/no-unnecessary-condition": "warn",
@@ -113,7 +106,6 @@
     "linebreak-style": ["warn", "unix"],
     "lines-around-comment": ["warn", { "beforeBlockComment": true }],
     "lines-between-class-members": ["warn", "always", { "exceptAfterSingleLine": true }],
-    "max-classes-per-file": ["warn", 1],
     "max-depth": ["warn", 4],
     "max-lines": ["warn", { "max": 512, "skipBlankLines": true, "skipComments": true }],
     "max-lines-per-function": ["warn", { "max": 32, "skipBlankLines": true, "skipComments": true }],
