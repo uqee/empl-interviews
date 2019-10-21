@@ -34,8 +34,8 @@
     "compile": "tsc",
     "exam": "yarn lint && yarn compile",
     "lint": "eslint --ext ts ./src",
-    "play": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn --",
-    "start": "yarn play src/playground.ts",
+    "play": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn",
+    "start": "yarn play --project playground/playground.tsconfig.json playground/playground.ts",
     "test": "jest"
   },
   "version": "0.1.0"

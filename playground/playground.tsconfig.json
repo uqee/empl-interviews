@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "lib": null,
+    "noImplicitAny": false
+  },
+  "extends": "../tsconfig.json",
+  "include": [
+    "playground"
+  ]
+}
