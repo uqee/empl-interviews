@@ -3,7 +3,7 @@ import { List } from '.'
 describe('default', () => {
   const create = (size: number): List =>
     new List(size, (): number => Math.floor(Math.random() * 10))
-  const verify = (list: List): string =>
+  const verify = (list: List): void =>
     expect(
       list
         .values()
