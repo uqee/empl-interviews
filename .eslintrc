@@ -23,7 +23,6 @@
           "error",
           { "accessibility": "explicit" }
         ],
-        "@typescript-eslint/generic-type-naming": ["error", "^T[A-Z][a-zA-Z]+$"],
         "@typescript-eslint/no-empty-interface": "off",
         "@typescript-eslint/no-explicit-any": [
           "error",
@@ -37,7 +36,7 @@
         "@typescript-eslint/no-magic-numbers": "off",
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/no-require-imports": "off",
-        "@typescript-eslint/no-unnecessary-condition": ["error", { "ignoreRhs": true }],
+        "@typescript-eslint/no-unnecessary-condition": "error",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "error",
         "@typescript-eslint/no-useless-constructor": "error",
