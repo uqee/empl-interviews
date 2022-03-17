@@ -1,4 +1,5 @@
 class Item<TValue = unknown> {
+  // eslint-disable-next-line no-use-before-define
   public next: Item<TValue> | undefined
   public value: TValue
 
