@@ -1,36 +1,22 @@
-function clone<T extends Object>(value: T): T {
-  if (typeof value === 'object' && value !== null) {
-    const result = {} as T
-    for (const key in value) {
-      if (value.hasOwnProperty(key)) {
-        result[key] = clone(value[key])
-      }
-    }
-    return result
-  } else {
-    return value
+import assert from 'assert'
+
+function getMaxsum(a: number[], k: number): number {
+  let sum = 0
+  let maxsum = 0
+  for (let i = 0, l = a.length; i < l; i++) {
+    sum += a[i]
+    sum -= a[i - k] ?? 0
+    maxsum = Math.max(maxsum, sum)
   }
+  return maxsum
 }
 
 describe('', () => {
-  const object = {
-    a: 1,
-    b: 'hello',
-    c: {
-      d: 'world',
-    },
-    e: {
-      f: {
-        g: 100,
-      },
-    },
-  }
-
   test('', () => {
-    expect(JSON.stringify(object) === JSON.stringify(clone(object))).toBeTruthy()
+    assert(getMaxsum([2, 1, 5, 1, 3, 2], 3) === 9)
   })
 
   test('', () => {
-    expect(object !== clone(object)).toBeTruthy()
+    assert(getMaxsum([2, 3, 4, 1, 5], 2) === 7)
   })
 })
