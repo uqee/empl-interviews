@@ -1,9 +1,9 @@
 import assert from 'assert'
 
-function foo(): number {
-  return 42
-}
-
 describe('', () => {
+  function foo(): number {
+    return 42
+  }
+
   test('', () => assert(foo() === 42))
 })

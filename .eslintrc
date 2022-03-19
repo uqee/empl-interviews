@@ -119,7 +119,7 @@
     "lines-between-class-members": ["warn", "always", { "exceptAfterSingleLine": true }],
     "max-depth": ["warn", 8],
     "max-lines": ["warn", { "max": 512, "skipBlankLines": true, "skipComments": true }],
-    "max-lines-per-function": ["warn", { "max": 32, "skipBlankLines": true, "skipComments": true }],
+    "max-lines-per-function": ["warn", { "max": 64, "skipBlankLines": true, "skipComments": true }],
     "max-nested-callbacks": ["warn", 4],
     "max-params": ["warn", 4],
     "max-statements": ["warn", 32],

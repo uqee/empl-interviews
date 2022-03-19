@@ -1,40 +1,41 @@
+// https://leetcode.com/problems/3sum
 // import assert from 'assert'
 
-function foo(nums: number[]): number[][] {
-  const arr = nums.slice().sort((a, b) => a - b)
-  const length = arr.length
-  const result: number[][] = []
+describe('', () => {
+  function foo(nums: number[]): number[][] {
+    const arr = nums.slice().sort((a, b) => a - b)
+    const length = arr.length
+    const result: number[][] = []
 
-  let ia
-  let ib
-  let ic
-  let sum
-  let offset
+    let ia
+    let ib
+    let ic
+    let sum
+    let offset
 
-  for (ib = 0; ib < length; ib++) {
-    for (offset = 1; offset < length; offset++) {
-      ia = ib - offset
-      ic = ib + offset
-      while (ia >= 0 && ic < length) {
-        sum = arr[ia] + arr[ib] + arr[ic]
-        if (sum > 0) ia--
-        else if (sum < 0) ic++
-        else {
-          const next = [arr[ia], arr[ib], arr[ic]]
-          const duplicate = result.find(
-            (v) => v[0] === next[0] && v[1] === next[1] && v[2] === next[2],
-          )
-          if (!duplicate) result.push([arr[ia], arr[ib], arr[ic]])
-          break
+    for (ib = 0; ib < length; ib++) {
+      for (offset = 1; offset < length; offset++) {
+        ia = ib - offset
+        ic = ib + offset
+        while (ia >= 0 && ic < length) {
+          sum = arr[ia] + arr[ib] + arr[ic]
+          if (sum > 0) ia--
+          else if (sum < 0) ic++
+          else {
+            const next = [arr[ia], arr[ib], arr[ic]]
+            const duplicate = result.find(
+              (v) => v[0] === next[0] && v[1] === next[1] && v[2] === next[2],
+            )
+            if (!duplicate) result.push([arr[ia], arr[ib], arr[ic]])
+            break
+          }
         }
       }
     }
+
+    return result
   }
 
-  return result
-}
-
-describe('', () => {
   test('', () => expect(foo([])).toEqual([]))
   test('', () => expect(foo([0])).toEqual([]))
   test('', () => {
