@@ -25,8 +25,8 @@
   "license": "MIT",
   "name": "empl-interviews",
   "scripts": {
-    "exam": "eslint --ext ts ./src && tsc && jest",
     "postinstall": "husky install",
+    "pre-push": "eslint --ext ts ./src && tsc && jest",
     "start": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn src/playground/index.ts",
     "test": "jest --testPathPattern=playground --watch"
   },
