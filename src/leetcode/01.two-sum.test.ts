@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-
 // https://leetcode.com/problems/two-sum
-// import assert from 'assert'
 
 describe('', () => {
   function foo(nums: number[], sum: number): number[] {

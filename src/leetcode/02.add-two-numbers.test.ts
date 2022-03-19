@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/add-two-numbers/
-// import assert from 'assert'
 
 describe('', () => {
   function foo(l1: number[], l2: number[]): number[] {

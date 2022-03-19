@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/3sum
-// import assert from 'assert'
 
 describe('', () => {
   function foo(nums: number[]): number[][] {
