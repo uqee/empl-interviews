@@ -25,11 +25,10 @@
   "license": "MIT",
   "name": "empl-interviews",
   "scripts": {
-    "exam": "eslint --ext ts ./src && tsc",
+    "exam": "eslint --ext ts ./src && tsc && jest",
     "postinstall": "husky install",
-    "s": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn src/playground/index.ts",
-    "t": "jest --testPathPattern=playground --watch",
-    "test": "jest"
+    "start": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn src/playground/index.ts",
+    "test": "jest --testPathPattern=playground --watch"
   },
   "version": "0.1.0"
 }
