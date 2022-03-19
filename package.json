@@ -25,13 +25,10 @@
   "license": "MIT",
   "name": "empl-interviews",
   "scripts": {
-    ".compile": "tsc",
-    ".lint": "eslint --ext ts ./src",
-    ".play": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn",
-    "exam": "yarn .lint && yarn .compile",
+    "exam": "eslint --ext ts ./src && tsc",
     "postinstall": "husky install",
-    "s": "yarn .play --project playground/playground.tsconfig.json playground/playground.ts",
-    "t": "yarn test --testPathPattern=playground --watch",
+    "s": "tsnd --clear --log-error --no-notify --prefer-ts --pretty --respawn src/playground/index.ts",
+    "t": "jest --testPathPattern=playground --watch",
     "test": "jest"
   },
   "version": "0.1.0"

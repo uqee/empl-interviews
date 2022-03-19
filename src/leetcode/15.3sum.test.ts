@@ -7,11 +7,11 @@ describe('', () => {
     const length = arr.length
     const result: number[][] = []
 
-    let ia
-    let ib
-    let ic
-    let sum
-    let offset
+    let ia: number
+    let ib: number
+    let ic: number
+    let sum: number
+    let offset: number
 
     for (ib = 0; ib < length; ib++) {
       for (offset = 1; offset < length; offset++) {

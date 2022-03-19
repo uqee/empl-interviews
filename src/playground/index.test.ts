@@ -1,7 +1,7 @@
 import assert from 'assert'
 
 describe('', () => {
-  function foo(): number {
+  function foo() {
     return 42
   }
 
