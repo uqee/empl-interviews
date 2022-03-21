@@ -1,9 +1,7 @@
-import assert from 'assert'
-
 describe('', () => {
-  function foo() {
+  function f() {
     return 42
   }
 
-  test('', () => assert(foo() === 42))
+  test('', () => expect(f()).toEqual(42))
 })
